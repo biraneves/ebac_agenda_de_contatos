@@ -8,6 +8,7 @@
   --base-light: rgb(208, 227, 249);
   --base-dark: rgb(61, 81, 105);
   --medium-dark: rgb(73, 109, 150);
+  --highlight: rgb(197, 183, 138);
   --title-font: 'Josefin Sans', sans-serif;
   --base-font: 'Roboto', sans-serif;
 }
@@ -100,4 +101,59 @@ button {
 
 button:hover {
   background-color: var(--medium-dark);
+}
+
+main,
+table {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  font-family: var(--title-font);
+  font-size: 22px;
+  padding: 5px;
+  color: var(--base-dark);
+  border-bottom: solid 3px var(--base-dark);
+}
+
+td {
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+tbody tr td:last-child {
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  padding: 40px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer strong {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--highlight);
+}
+
+footer a:hover {
+  color: var(--base-dark);
 }
