@@ -19,7 +19,7 @@ body {
   background-color: var(--body-background-color);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   font-family: var(--base-font);
 }
 
@@ -27,6 +27,7 @@ body {
   width: 70vw;
   min-height: 300px;
   background-color: var(--container-background-color);
+  margin: 80px auto 40px auto;
   padding: 60px 40px;
   border: none;
   border-radius: 10px;
