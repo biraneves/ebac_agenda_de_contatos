@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@300&display=swap');
 
 :root {
   --body-background-color: rgb(117, 152, 193);
   --container-background-color: rgb(208, 227, 249);
   --base-black: rgb(5, 5, 5);
+  --base-white: rgb(250, 250, 250);
   --base-light: rgb(208, 227, 249);
   --base-dark: rgb(61, 81, 105);
+  --medium-dark: rgb(73, 109, 150);
   --title-font: 'Josefin Sans', sans-serif;
+  --base-font: 'Roboto', sans-serif;
 }
 
 body {
@@ -16,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--base-font);
 }
 
 .container {
@@ -29,6 +33,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+header {
+  width: 100%;
 }
 
 #titulo {
@@ -49,4 +57,47 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: var(--base-dark);
+}
+
+#formulario {
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  font-family: var(--base-font);
+  color: var(--base-dark);
+  font-size: 16px;
+  background-color: var(--base-white);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: solid 1px var(--medium-dark);
+  border-bottom-width: 3px;
+}
+
+#nome {
+  width: 360px;
+}
+
+button {
+  font-family: var(--title-font);
+  font-size: 18px;
+  color: white;
+  background-color: var(--base-dark);
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--medium-dark);
 }
