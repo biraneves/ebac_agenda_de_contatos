@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
 :root {
   --body-background-color: rgb(117, 152, 193);
   --container-background-color: rgb(208, 227, 249);
   --base-black: rgb(5, 5, 5);
+  --base-light: rgb(208, 227, 249);
+  --base-dark: rgb(61, 81, 105);
+  --title-font: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -24,4 +29,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+#titulo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#titulo span {
+  font-size: 48px;
+  color: var(--base-dark);
+  margin-right: 20px;
+}
+
+#titulo h1 {
+  font-family: var(--title-font);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--base-dark);
 }
